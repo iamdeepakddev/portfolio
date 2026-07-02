@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deepak Dev D — Senior Backend Engineer</title>
+  <title>Deepak Dev D — Backend Engineer</title>
   <meta name="description" content="Deepak Dev D — Senior Software Engineer (Backend). 7+ years building and scaling distributed systems in fintech and banking." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,6 @@
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
     .mono{font-family:var(--mono);}
 
-    /* ---------- top bar ---------- */
     header.bar{
       position:sticky;top:0;z-index:50;
       backdrop-filter:saturate(140%) blur(8px);
@@ -81,9 +80,7 @@
     }
     .status .dot{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 var(--signal-soft);animation:pulse 2.4s infinite;}
     @keyframes pulse{0%{box-shadow:0 0 0 0 var(--signal-soft);}70%{box-shadow:0 0 0 10px rgba(224,138,43,0);}100%{box-shadow:0 0 0 0 rgba(224,138,43,0);}}
-    .menu-btn{display:none;}
 
-    /* ---------- hero ---------- */
     .hero{padding:74px 0 56px;}
     .hero-grid{display:block;max-width:760px;}
     .eyebrow{
@@ -97,21 +94,9 @@
     }
     h1 .role{display:block;font-size:clamp(17px,2.4vw,22px);font-weight:500;color:var(--ink-2);letter-spacing:-.01em;margin-top:14px;font-family:var(--body);}
     .lede{font-size:17px;color:var(--ink-2);max-width:46ch;margin:0 0 30px;}
-    .cta-row{display:flex;flex-wrap:wrap;gap:12px;}
-    .btn{
-      font-family:var(--body);font-weight:600;font-size:14.5px;
-      padding:12px 20px;border-radius:10px;border:1px solid transparent;cursor:pointer;
-      display:inline-flex;align-items:center;gap:9px;transition:transform .12s,box-shadow .15s,background .15s;
-    }
-    .btn:active{transform:translateY(1px);}
-    .btn.primary{background:var(--primary);color:#fff;box-shadow:0 6px 18px rgba(36,64,200,.22);}
-    .btn.primary:hover{background:var(--primary-deep);}
-    .btn.ghost{background:var(--surface);border-color:var(--line-strong);color:var(--ink);}
-    .btn.ghost:hover{border-color:var(--primary);color:var(--primary);}
     .meta-row{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;font-family:var(--mono);font-size:12.5px;color:var(--muted);}
     .meta-row span b{color:var(--ink);font-weight:500;}
 
-    /* ---------- recognition strip ---------- */
     .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);}
     .strip-inner{display:grid;grid-template-columns:repeat(3,1fr);}
     .strip .cell{padding:22px 24px;border-right:1px solid var(--line);}
@@ -120,14 +105,12 @@
     .strip .v{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:-.01em;}
     .strip .v small{display:block;font-family:var(--body);font-weight:400;font-size:12.5px;color:var(--muted);margin-top:3px;}
 
-    /* ---------- sections ---------- */
     section.block{padding:74px 0;}
     .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:38px;}
     .sec-head .num{font-family:var(--mono);font-size:13px;color:var(--primary);}
     .sec-head h2{font-family:var(--display);font-weight:700;letter-spacing:-.02em;font-size:clamp(26px,3.6vw,36px);margin:0;}
     .sec-head .rule{flex:1;height:1px;background:var(--line-strong);align-self:center;}
 
-    /* experience timeline */
     .timeline{display:grid;gap:0;}
     .tl-item{
       display:grid;grid-template-columns:170px 1fr;gap:30px;
@@ -144,7 +127,6 @@
     .tl-points li{font-size:14.5px;color:var(--ink-2);padding-left:20px;position:relative;}
     .tl-points li::before{content:"→";position:absolute;left:0;color:var(--primary);font-family:var(--mono);}
 
-    /* project cards */
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
     .card{
       background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
@@ -157,14 +139,12 @@
     .card .stack{display:flex;flex-wrap:wrap;gap:6px;}
     .card .stack span{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);padding:3px 8px;border-radius:6px;}
 
-    /* skills */
     .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
     .skill-col h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line);}
     .skill-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
     .skill-col li{font-size:14.5px;color:var(--ink);display:flex;align-items:center;gap:9px;}
     .skill-col li::before{content:"";width:5px;height:5px;border-radius:1px;background:var(--primary);flex-shrink:0;}
 
-    /* two-up: certs + languages */
     .two-up{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
     .list-clean{list-style:none;margin:0;padding:0;}
     .cert{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-top:1px solid var(--line);}
@@ -180,26 +160,19 @@
     .bar-track{height:5px;background:var(--line);border-radius:99px;overflow:hidden;}
     .bar-fill{height:100%;background:var(--primary);border-radius:99px;}
 
-    /* education */
     .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
     .edu{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
     .edu .deg{font-family:var(--display);font-weight:600;font-size:17px;margin:0 0 6px;letter-spacing:-.01em;}
     .edu .uni{color:var(--primary);font-weight:600;font-size:14px;}
     .edu .yr{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:6px;}
 
-    /* contact */
     .contact{background:var(--navy);color:#fff;border-radius:var(--radius);padding:54px 44px;position:relative;overflow:hidden;}
     .contact h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,42px);letter-spacing:-.02em;margin:0 0 14px;}
-    .contact p{color:rgba(255,255,255,.66);max-width:46ch;margin:0 0 28px;font-size:16px;}
-    .contact .cta-row .btn.ghost{background:transparent;border-color:rgba(255,255,255,.28);color:#fff;}
-    .contact .cta-row .btn.ghost:hover{border-color:#fff;color:#fff;}
-    .contact-meta{display:flex;flex-wrap:wrap;gap:28px;margin-top:34px;padding-top:26px;border-top:1px solid rgba(255,255,255,.12);font-family:var(--mono);font-size:13px;color:rgba(255,255,255,.6);}
-    .contact-meta a:hover{color:#fff;}
+    .contact p{color:rgba(255,255,255,.66);max-width:46ch;margin:0;font-size:16px;}
     .contact .glow{position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(36,64,200,.55),transparent 70%);}
 
     footer.foot{padding:38px 0;text-align:center;font-family:var(--mono);font-size:12px;color:var(--muted);}
 
-    /* reveal animation */
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
     .reveal.in{opacity:1;transform:none;}
 
@@ -252,7 +225,7 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="reveal">
-      <span class="eyebrow">Senior Software Engineer · Backend</span>
+      <span class="eyebrow"> Software Engineer · Backend</span>
       <h1>
         Building systems that stay up at scale.
         <span class="role">7+ years engineering distributed backends across fintech &amp; banking.</span>
@@ -260,10 +233,6 @@
       <p class="lede">
         I design and operate high-performance backend systems — focused on reliability, clean architecture, and customer-centric solutions in regulated financial environments.
       </p>
-      <div class="cta-row">
-        <a class="btn primary" href="mailto:iamdeepakddev@gmail.com">Get in touch →</a>
-        <!-- <a class="btn ghost" href="DeepakDev_Resume_Software_Engineer.pdf" download>Download résumé</a> -->
-      </div>
       <div class="meta-row">
         <span><b>Bengaluru, India</b> · open to relocation</span>
         <span>Java · Kubernetes · MongoDB</span>
@@ -289,7 +258,6 @@
   </div>
 </div>
 
-<!-- EXPERIENCE -->
 <section class="block" id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -298,14 +266,13 @@
       <span class="rule"></span>
     </div>
     <div class="timeline">
-      <!-- Job 1 -->
       <div class="tl-item reveal">
         <div class="tl-when">
           <b>Jun 2024 — Present</b>
           Mumbai, MH
         </div>
         <div>
-          <h3 class="tl-role">Senior Software Engineer (Backend)</h3>
+          <h3 class="tl-role">Software Engineer (Backend)</h3>
           <div class="tl-co">IDFC First Bank <span class="loc">· Banking &amp; Payments</span></div>
           <p class="tl-desc">
             Leading backend design for core banking platforms — driving distributed-system reliability, scalable API design, and architecture decisions across customer-facing products.
@@ -317,7 +284,6 @@
           </ul>
         </div>
       </div>
-      <!-- Job 2 -->
       <div class="tl-item reveal">
         <div class="tl-when">
           <b>Jan 2021 — May 2024</b>
@@ -336,7 +302,6 @@
           </ul>
         </div>
       </div>
-      <!-- Job 3 -->
       <div class="tl-item reveal">
         <div class="tl-when">
           <b>Jun 2019 — Dec 2020</b>
@@ -359,7 +324,6 @@
   </div>
 </section>
 
-<!-- WORK / PROJECTS -->
 <section class="block" id="work">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -411,7 +375,6 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section class="block" id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -460,7 +423,6 @@
   </div>
 </section>
 
-<!-- CERTS + LANGUAGES -->
 <section class="block">
   <div class="wrap two-up">
     <div class="reveal">
@@ -529,7 +491,6 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section class="block">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -552,27 +513,12 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="block" id="contact">
   <div class="wrap">
     <div class="contact reveal">
       <div class="glow" aria-hidden="true"></div>
       <h2>Let's build something reliable.</h2>
-      <p>Open to senior backend and distributed-systems roles. The fastest way to reach me is email.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="mailto:iamdeepakddev@gmail.com">iamdeepakddev@gmail.com</a>
-        <a class="btn ghost" href="DeepakDev_Resume_Software_Engineer.pdf" download>Download résumé</a>
-      </div>
-      <div class="contact-meta">
-        <span>📍 Bengaluru, India</span>
-        <a href="mailto:iamdeepakddev@gmail.com">iamdeepakddev@gmail.com</a>
-        <a href="https://www.linkedin.com/in/deepak-dev-772455409/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-          </svg>
-          LinkedIn
-        </a>
-      </div>
+      <p>Open to senior backend and distributed-systems roles.</p>
     </div>
   </div>
 </section>
@@ -582,7 +528,6 @@
 </footer>
 
 <script>
-  // scroll reveal
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
       if(e.isIntersecting){
